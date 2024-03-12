@@ -55,12 +55,16 @@
       var base_url = "https://m.51wma.com/en/";
     </script>
     <script src="static/js/jquery.min.js" type="text/javascript"></script>
+
+    <script src="static/js/lazyload.js"></script>
+
     <script src="static/js/global.js" type="text/javascript"></script>
     <script src="static/js/index.js" type="text/javascript"></script>
     <script src="static/js/main.js" type="text/javascript"></script>
     <script type="text/javascript" src="static/js/search.js"></script>
     <script type="text/javascript" src="static/js/swiper.min.js"></script>
     <script async src="static/js/63356d72fba24809a47483421ecf9354.js"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -579,19 +583,4 @@
       // ]]>
     </script>
   </body>
-  <script src="static/js/lazyload.js"></script>
-  <script>
-    /* document.addEventListener("DOMContentLoaded", function () {
-      var images = document.querySelectorAll("img"); // 获取所有需要处理的图片元素
-      for (var i = 0; i < images.length; i++) {
-        images[i].setAttribute("data-original", images[i].getAttribute("src")); // 将src属性的值赋给data-original属性
-        images[i].removeAttribute("src"); // 移除src属性及其内容
-      }
-    }); */
-    $("[data-original]").lazyload({
-      effect: "fadeIn",
-      threshold: 100,
-      failure_limit: 50,
-    });
-  </script>
 </html>
